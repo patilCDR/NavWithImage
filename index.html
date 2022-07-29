@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style3.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <a class="active" href="#">
+          <img class="img1" src="/img/download.jpg" />
+          <!-- <i class="fa fa-fw fa-home"></i> -->
+          <br />
+          Home</a
+        >
+        <a href="#">
+          <img class="img2" src="/img/2.jpg" />
+          <br />
+          About Us</a
+        >
+        <a href="#">
+          <img class="img2" src="/img/5.jpg" /><br />
+          Portfolio</a
+        >
+        <a href="#">
+          <img class="img2" src="/img/4.jpg" /><br />
+          Services</a
+        >
+        <a href="#">
+          <img class="img2" src="/img/5.jpg" /><br />
+          Contact Us</a
+        >
+      </div>
+    </div>
+    <h1>Home</h1>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      $("a").click(function () {
+        $(this)
+          .children()
+          .css("opacity", 1)
+          .parent()
+          .siblings()
+          .children()
+          .css("opacity", 0);
+      });
+    });
+  </script>
+</html>
